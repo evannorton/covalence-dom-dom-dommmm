@@ -7,8 +7,8 @@ function button() {
     document.body.appendChild(button);
     let id = 0;
 
-    button.addEventListener("click", addSquare);
-    function addSquare() {
+    button.addEventListener("click", click);
+    function click() {
         id++;
         let square = document.createElement("div");
         square.id = id;
@@ -18,5 +18,16 @@ function button() {
         p.appendChild(squareText);
         square.appendChild(p);
         document.body.appendChild(square);
+        p.style.opacity = "0";
+        
+        square.addEventListener("mouseenter", hover);
+        function hover() {
+            p.style.opacity=".5";
+        }
+
+        square.addEventListener("mouseleave", noHover);
+        function noHover() {
+            p.style.opacity="0";
+        }
     }
 }
