@@ -74,18 +74,24 @@ function button() {
         //listen for doubleclick on div
         square.addEventListener("dblclick", squareDoubleClick);
         function squareDoubleClick() {
+            //check for odd or even
             if (square.id % 2 === 0) {
+                //set variable to current ID + 1
                 let elementID = parseInt(square.id) + 1;
+                //set variable to element with that ID
                 let element = document.getElementById(elementID);
+                //delete element or display an alert depending on if element exists
                 if (element == null) {
                     alert("Square with ID " + elementID + " does not exist.")
                 } else {
                     element.parentNode.removeChild(element);
-                }
-                    
+                }      
             } else {
+                //set variable to current ID - 1
                 let elementID = parseInt(square.id) - 1;
+                //set variable to element with that ID
                 let element = document.getElementById(elementID);
+                //delete element or display an alert depending on if element exists
                 if (element == null) {
                     alert("Square with ID " + elementID + " does not exist.")
                 } else {
