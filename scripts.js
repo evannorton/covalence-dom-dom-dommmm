@@ -11,8 +11,12 @@ function button() {
     function addSquare() {
         id++;
         let square = document.createElement("div");
-        square.className = "black-square";
         square.id = id;
+        square.className = "black-square";
+        let p = document.createElement("p");
+        let squareText = document.createTextNode(id);
+        p.appendChild(squareText);
+        square.appendChild(p);
         document.body.appendChild(square);
     }
 }
