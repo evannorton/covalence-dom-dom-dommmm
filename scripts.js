@@ -70,5 +70,28 @@ function button() {
                 square.style.backgroundColor = "orange";
             }
         }
+
+        //listen for doubleclick on div
+        square.addEventListener("dblclick", squareDoubleClick);
+        function squareDoubleClick() {
+            if (square.id % 2 === 0) {
+                let elementID = parseInt(square.id) + 1;
+                let element = document.getElementById(elementID);
+                if (element == null) {
+                    alert("Square with ID " + elementID + " does not exist.")
+                } else {
+                    element.parentNode.removeChild(element);
+                }
+                    
+            } else {
+                let elementID = parseInt(square.id) - 1;
+                let element = document.getElementById(elementID);
+                if (element == null) {
+                    alert("Square with ID " + elementID + " does not exist.")
+                } else {
+                    element.parentNode.removeChild(element);
+                }
+            }
+        }
     }
 }
