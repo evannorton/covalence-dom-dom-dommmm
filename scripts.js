@@ -11,5 +11,6 @@ function button() {
         let square = document.createElement("div");
         square.className = "black-square";
         document.body.appendChild(square);
+        square.style.color = "black";
     }
 }
