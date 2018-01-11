@@ -16,10 +16,10 @@ function button() {
     let id = 0;
 
     //listen for button click
-    button.addEventListener("click", click);
+    button.addEventListener("click", buttonClick);
 
-    //click function
-    function click() {
+    //buttonClick function
+    function buttonClick() {
         //increment id
         id++;
         //create div
@@ -52,5 +52,7 @@ function button() {
         function noHover() {
             p.style.opacity="0";
         }
+
+        //listen for click on div
     }
 }
