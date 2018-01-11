@@ -9,6 +9,7 @@ function button() {
     button.addEventListener("click", addSquare());
     function addSquare() {
         let square = document.createElement("div");
+        square.className = "black-square";
         document.body.appendChild(square);
     }
 }
