@@ -1,16 +1,11 @@
+document.addEventListener("DOMContentLoaded", addSquare());
 
-
-
-
-
-
-
-
-
-
-
-
-
+function addSquare() {
+    let button = document.createElement("button");
+    let btnText =  document.createTextNode("Add square!");
+    button.appendChild(btnText);
+    document.body.appendChild(button);
+}
 
 /* document.addEventListener("DOMContentLoaded", paragraphText())
 document.addEventListener("DOMContentLoaded", button())
