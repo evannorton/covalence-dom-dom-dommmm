@@ -1,0 +1,19 @@
+.button {
+    display: block;
+}
+
+.black-square {
+    background-color: black;
+    margin: 1em;
+    display: inline-block;
+    padding: 5em;
+}
+
+p {
+    color: white;
+    font-size: 4em;
+    text-align: center;
+    margin: 0;
+    width: 1em;
+    height: 1em;
+}
