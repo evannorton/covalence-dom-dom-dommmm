@@ -1,5 +1,4 @@
 # DOM DOM DOMMMMMMM!
-Covalence
 
 ## Info
 * To practice using DOM functions, you will not write any HTML in this lab
